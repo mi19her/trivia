@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Triviaton - Juego de Trivias</title>
+    <!--estilos de letra-->
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--link para saber los estilos en tu css-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <!--fondo de pantalla-->
+  <body>
+    <h1 id="trivia"> TriviatOn </h1>
+    <div id="inicio">
+      <div id="llamar">
+        <p> ¡Gana 100 puntos por cada acierto!</p>
+        <p> 🤩 ¡ Juega ya ! 🤩 </p>
+        <!--el usuario ingresa su nombre-->
+        <input type="text" id="name" placeholder="¿Cuál es tu nombre? "/>
+        <button type="submit" id="guardar">OK</button>
+      </div>
+      <div class="botones" id="botones">
+        <!--mensaje en una linea para jugar-->
+        <p id="saludo"></p>
+        <p><strong> ¡Vamos a Jugar! </strong></P>
+        <!--2 opciones de botones para jugar-->
+         <button name="tema1" type="button" id="verComida" class="btn-primary"> Gastronomía </button>
+         <button name="tema2" type="button" id="verAnimales" class="btn-success"> Animales </button>
+      </div>
+    </div>
+    <article id="pregComida">
+      <!--muestra las preguntas de gasteronomia y sus respuestas-->
+      <section class="preguntaGastronomia" id="ceviche">
+        <label><b>Tengo pescado, ají, limón y cebolla, ¿Qué plato soy?</b></label><br> <br>
+        <input type="radio" name="p1" value="100" > Ceviche <br>
+        <input type="radio" name="p1" value="0" > Escabeche <br>
+        <input type="radio" name="p1" value="0" > Locro <br>
+         <br>
+        <button type="button" id="siguientePregunta1" class="btn-outline-warning">Siguiente </button>
+      </section>
+      <section class="preguntaGastronomia" id="turron">
+        <label><b>¿Cuál es el postre típico del mes Morado?</b></label> <br><br>
+        <input type="radio" name="p2" value="0" > King Kong <br>
+        <input type="radio" name="p2" value="100" > Turrón <br>
+        <input type="radio" name="p2" value="0"> Arroz con leche <br>
+         <br>
+        <button type="button" id="siguientePregunta2" class="btn-outline-warning">Siguiente </button>
+      </section>
+      <section class="preguntaGastronomia" id="años">
+        <label><b>¿Cuántos años tiene la receta de la Causa?</b></label> <br> <br>
+        <input type="radio" name="p3" value="0" > 50 años <br>
+        <input type="radio" name="p3" value="0" > 100 años <br>
+        <input type="radio" name="p3" value="100" > Más de 150 años <br>
+         <br>
+        <button type="button"  value="enviar1" id="resultado1" class="btn-outline-warning"> Enviar </button>
+      </section>
+    </article>
+    <article id="pregAnimales">
+        <!--muestra las preguntas de animales y sus respuestas-->
+      <section class="preguntasAnimales" id="tigre">
+        <label><b>¿Cuál es el felino más grande del mundo?</b></label> <br> <br>
+        <input type="radio" name="p3" value="0"> Pantera <br>
+        <input type="radio" name="p3" value="0"> León <br>
+        <input type="radio" name="p3" value="100"> Tigre <br>
+        <br>
+        <button type="button" id="siguientePregunta3" class="btn-outline-info">Siguiente </button>
+      </section>.
+        <section id="africa">
+        <label><b>¿De qué continente son nativas las Jirafas?</b></label> <br> <br>
+        <input type="radio" name="p4" value="0"> Europa <br>
+        <input type="radio" name="p4" value="100"> África <br>
+        <input type="radio" name="p4" value="0"> Oceanía <br>
+        <br>
+        <button type="button" id="siguientePregunta4" class="btn-outline-info">Siguiente </button>
+      </section>
+      <section id="dulce">
+        <label><b>¿Qué sabor no pueden percibir los gatos?</b></label> <br><br>
+        <input type="radio" name="p5" value="0"> El sabor salado <br>
+        <input type="radio" name="p5" value="0"> Pueden saborear todos <br>
+        <input type="radio" name="p5" value="100"> El sabor dulce <br>
+        <br>
+        <button type="button" value="enviar2" id="resultado2" class="btn-outline-info"> Enviar </button>
+      </section>
+    </article>
+    <article>
+      <!--muestra el puntaje final del juego-->
+      <section id="resultado_final">
+        <h2> Resultados TRIVIATON </h2>
+        <div id="corazon">
+         <img src="img/like.png" width="30px">
+        </div>
+        <!--muestra los botones para volver a jugar-->
+        <p id="rpta"></p>
+        <p>¿ Jugamos de Nuevo ?</p>
+      </section>
+    </article>
+    <footer>By @MilcaPulido & @shirs.sosa </footer>
+  <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

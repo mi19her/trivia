@@ -1,0 +1,79 @@
+body {
+  background-image:url("../img/fondo_bienvenida.png");
+  margin-top: 100px;
+}
+ h1 {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 120px;
+  color: #212F3C;
+  text-align: center;
+}
+h2 {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size:55px;
+  color: #212F3C;
+  text-align: center;
+  margin-top: 300px;
+  margin-inline-start: 200px;
+  margin-inline-end: 200px;
+  margin: 50px;
+}
+input{
+  text-align: center;
+  border-radius: 10px;
+  border-color: #ff8b9e;
+  margin-left: 30px;
+  background-color: white;
+}
+div{
+  text-align: center;
+  font-size: 23px;
+  font-family: 'Gloria Hallelujah';
+}
+div #saludo{
+  font-size: 40px;
+  text-align: center;
+  color:#148F77;
+  margin-top: 20px;
+}
+div #llamar{
+  margin-top: 30px;
+  color: #873600  ;
+}
+button{
+  border-radius: 10px;
+  background-color: #38b6ff;
+  margin-bottom: 30px;
+  border-color: #f8f9fa;
+  color: white;
+}
+#guardar:hover{
+  transform: rotate(20deg);
+}
+section{
+  margin: 10 auto;
+  display:none;
+  font-size: 15px;
+}
+article{
+  margin-top: 50px;
+  margin-left: 500px;
+  margin-right:300px;
+}
+p{
+  font-family: 'Gloria Hallelujah';
+  font-size: 30px;
+  text-align: center;
+  color: #E91E63;
+  margin-top: 20px;
+}
+.botones{
+  display: none;
+}
+footer{
+  font-family: 'Gloria Hallelujah';
+  font-size: 13px;
+  text-align: center;
+  color: #E91E63;
+  margin-top: 10px;
+}
